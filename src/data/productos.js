@@ -70,5 +70,392 @@ export const productos = [
     imagen: "https://exitocol.vtexassets.com/arquivos/ids/23569723/anillo-vibrador-para-pene-retardante-y-estimulante-punto-g.jpg?v=638562516131900000",
     destacado: false,
     categoria: "Juguetes"
+  },
+  {
+    id: 8,
+    nombre: "Body de Encaje Negro",
+    descripcion: "Body de encaje negro, elegante y sensual.",
+    precio: 85000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhU_plPKleFE9CdRnFk3rui2veTNcbRhDapw&s",
+    destacado: true,
+    categoria: "Lencería"
+  },
+  {
+    id: 9,
+    nombre: "Conjunto de Lencería Rojo",
+    descripcion: "Conjunto de lencería rojo con detalles en encaje.",
+    precio: 78000,
+    imagen: "https://soykuwai.com/wp-content/uploads/2024/04/conjunto-de-lenceria-rojo-en-Medellin.webp",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 10,
+    nombre: "Babydoll Transparente",
+    descripcion: "Babydoll transparente con tirantes ajustables.",
+    precio: 69000,
+    imagen: "https://ropamujerbonita.com/wp-content/uploads/2023/12/67-300x450.jpg",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 11,
+    nombre: "Tanga de Encaje",
+    descripcion: "Tanga de encaje suave y cómodo.",
+    precio: 25000,
+    imagen: "https://www.sevenseven.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_sevenseven/default/dwdc608f3d/images/hi-res/Ropa_Int/Pantys-Para-Mujer-28800077-777_1.jpg?sw=800&sh=960",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 12,
+    nombre: "Conjunto de Lencería Blanco",
+    descripcion: "Conjunto blanco ideal para ocasiones especiales.",
+    precio: 82000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrbpJ_4nWunaWCzJ5PgTUWUuW7thpQZt_FQ&s",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 13,
+    nombre: "Corset Sexy",
+    descripcion: "Corset ajustable con varillas y encaje.",
+    precio: 99000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Oh4AXEAV-LhYfGhVxp2gHN4X2Kb1tyPlpQ&s",
+    destacado: true,
+    categoria: "Lencería"
+  },
+  {
+    id: 14,
+    nombre: "Conjunto de Lencería Azul",
+    descripcion: "Conjunto azul con detalles en encaje y transparencias.",
+    precio: 76000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kzaPu68iYL4R1rhL2_2Utu9ET5Y6O5oWfg&s",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 15,
+    nombre: "Conjunto de Lencería Verde",
+    descripcion: "Conjunto verde con tirantes ajustables.",
+    precio: 74000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP566ogpHd_3C7I9UipyZJX0hk8FjQpqjpA&s",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 16,
+    nombre: "Conjunto de Lencería Rosa",
+    descripcion: "Conjunto rosa con encaje floral.",
+    precio: 78000,
+    imagen: "https://img.kwcdn.com/product/fancy/071730d1-b2f4-4c21-a660-e4475015c619.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 17,
+    nombre: "Conjunto de Lencería Morado",
+    descripcion: "Conjunto morado con transparencias y encaje.",
+    precio: 79000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTP7IZrkgK5FS1jk-mUQ9tTC-MF5HthcOWw&s",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 18,
+    nombre: "Conjunto de Lencería Amarillo",
+    descripcion: "Conjunto amarillo vibrante y cómodo.",
+    precio: 72000,
+    imagen: "https://self-care-shop-5.myshopify.com/cdn/shop/files/61BD3B74-EE17-4730-9B5C-A05BAEC54F03.png?v=1715672277",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 19,
+    nombre: "Conjunto de Lencería Gris",
+    descripcion: "Conjunto gris con detalles en encaje.",
+    precio: 73000,
+    imagen: "https://i.etsystatic.com/14409013/r/il/d5bac9/3069908889/il_570xN.3069908889_pt9v.jpg",
+    destacado: false,
+    categoria: "Lencería"
+  },
+  {
+    id: 20,
+    nombre: "Kit de Juegos Eróticos",
+    descripcion: "Kit completo para juegos sexuales en pareja.",
+    precio: 150000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_610448-MCO77265922053_062024-O.webp",
+    destacado: true,
+    categoria: "Juguetes"
+  },
+  {
+    id: 21,
+    nombre: "Dados Eróticos",
+    descripcion: "Dados con posiciones y acciones para juegos divertidos.",
+    precio: 18000,
+    imagen: "https://m.media-amazon.com/images/I/6116TbIiwML._UF1000,1000_QL80_.jpg",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 22,
+    nombre: "Pluma de Cosquillas",
+    descripcion: "Pluma suave para juegos de cosquillas y estimulación.",
+    precio: 12000,
+    imagen: "https://m.media-amazon.com/images/I/5102Vjgsr3L._UF1000,1000_QL80_.jpg",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 23,
+    nombre: "Antifaz Erótico",
+    descripcion: "Antifaz para juegos de roles y sensaciones.",
+    precio: 15000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uhU8dz071kicDE-TJ4EowO3eWV9NqVos9A&s",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 24,
+    nombre: "Cuerda de Bondage",
+    descripcion: "Cuerda suave y resistente para juegos de ataduras.",
+    precio: 22000,
+    imagen: "https://m.media-amazon.com/images/I/71ZXYVsYlFL.jpg",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 25,
+    nombre: "Bolas Chinas",
+    descripcion: "Bolas para ejercicios y estimulación íntima.",
+    precio: 35000,
+    imagen: "https://miracle-store.co/cdn/shop/files/BolasChinas4.jpg?v=1715223746&width=1946",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 26,
+    nombre: "Plug Anal",
+    descripcion: "Plug anal de silicona, seguro y cómodo.",
+    precio: 40000,
+    imagen: "https://media.falabella.com/falabellaCO/129204691_01/w=800,h=800,fit=pad",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 27,
+    nombre: "Vibrador Conejito",
+    descripcion: "Vibrador con doble estimulación para mayor placer.",
+    precio: 135000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRal-9GFRqWi0bsVdhWjCbXrXgYSLNCRsvLJQ&s",
+    destacado: true,
+    categoria: "Juguetes"
+  },
+  {
+    id: 28,
+    nombre: "Juego de Cartas Eróticas",
+    descripcion: "Cartas con retos y posiciones para parejas.",
+    precio: 25000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuN9SoIXkeBs5MyaOsDjtUpsjg89ky7uYXg&s",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 29,
+    nombre: "Vibrador Bala",
+    descripcion: "Vibrador pequeño y discreto para estimulación puntual.",
+    precio: 38000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_856523-MLU71708213252_092023-O.webp",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 30,
+    nombre: "Arnés Erótico",
+    descripcion: "Arnés ajustable para juegos de roles y dominación.",
+    precio: 60000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-_sfWCtWOsBwK-eWfxPfzmu459yrVYvGJA&s",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 31,
+    nombre: "Vibrador Punto G",
+    descripcion: "Vibrador diseñado para estimulación del punto G.",
+    precio: 99000,
+    imagen: "https://media.falabella.com/falabellaCO/130077662_01/w=800,h=800,fit=pad",
+    destacado: true,
+    categoria: "Juguetes"
+  },
+  {
+    id: 32,
+    nombre: "Juego de Esposas y Antifaz",
+    descripcion: "Set de esposas y antifaz para juegos de dominación y placer.",
+    precio: 48000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_956086-MCO71832915245_092023-O.webp",
+    destacado: false,
+    categoria: "Juguetes"
+  },
+  {
+    id: 33,
+    nombre: "Vibrador Estimulador de Clítoris",
+    descripcion: "Diseñado para la estimulación externa con patrones de vibración.",
+    precio: 70000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_714263-MLA84179042840_052025-O.webp",
+    destacado: true,
+    categoria: "Juguetes"
+  },
+  {
+    id: 34,
+    nombre: "Masajeador de Cuello y Hombros",
+    descripcion: "Masajeador eléctrico para aliviar tensiones en cuello y hombros.",
+    precio: 95000,
+    imagen: "https://media.falabella.com/sodimacCO/713432/thumbnail",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 35,
+    nombre: "Espejo con Luz LED",
+    descripcion: "Espejo de aumento con luz LED para una mejor visibilidad.",
+    precio: 30000,
+    imagen: "https://i.pinimg.com/736x/ea/d6/fd/ead6fd2db19b1c7700a9e55fdeddb4fe.jpg",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 36,
+    nombre: "Bolsa Térmica",
+    descripcion: "Bolsa térmica para aliviar dolores musculares.",
+    precio: 20000,
+    imagen: "https://cdn1.totalcommerce.cloud/homesentry/product-zoom/es/bolsa-termica-1.webp",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 37,
+    nombre: "Kit de Limpieza para Juguetes",
+    descripcion: "Kit completo para mantener tus juguetes limpios y seguros.",
+    precio: 15000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_912098-CBT90399898580_082025-O.webp",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 38,
+    nombre: "Cinta Métrica",
+    descripcion: "Cinta métrica para juegos de medición y exploración.",
+    precio: 10000,
+    imagen: "https://http2.mlstatic.com/D_NQ_NP_852384-MLU74389615837_022024-O.webp",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 39,
+    nombre: "Guantes de Seda",
+    descripcion: "Guantes suaves para juegos de rol y sensaciones.",
+    precio: 25000,
+    imagen: "https://contents.mediadecathlon.com/p1897410/k$f9b132efc14b8fcc9cf2aa80375eba86/guantes-interiores-100-seda-de-trekking-en-montana-trek-500-negro-adulto.jpg?format=auto&quality=40&f=800x800",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 40,
+    nombre: "Antifaz de Seda",
+    descripcion: "Antifaz suave para juegos de rol y estimulación sensorial.",
+    precio: 15000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ON5SU_nfxSkvXFS7XbO5bN36yz4O16cILg&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 41,
+    nombre: "Bengala de Color",
+    descripcion: "Bengala para añadir un toque especial a tus noches.",
+    precio: 12000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfvY7pDRo4TXpqDfqZhmUA_BIh5D2VE5ORg&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 42,
+    nombre: "Póker de Plumas",
+    descripcion: "Póker suave para juegos de cosquillas y estimulación.",
+    precio: 18000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFIRSIqt_aP0WOHZzczFZFsEUhoXxL82MLQ&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 43,
+    nombre: "Kit de Bondage Suave",
+    descripcion: "Kit para iniciarse en el bondage con elementos suaves.",
+    precio: 70000,
+    imagen: "https://m.media-amazon.com/images/I/71-DU9s8VsL._UF1000,1000_QL80_.jpg",
+    destacado: true,
+    categoria: "Accesorios"
+  },
+  {
+    id: 44,
+    nombre: "Máscara de Ojos",
+    descripcion: "Máscara para bloquear la luz y aumentar la sensibilidad.",
+    precio: 12000,
+    imagen: "https://i.etsystatic.com/9715208/r/il/dd94ea/3843118299/il_570xN.3843118299_7f0p.jpg",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 45,
+    nombre: "Cadenas de Juguete",
+    descripcion: "Cadenas ligeras para juegos de restricción y dominación.",
+    precio: 25000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zTgDMprL0fYKs6PVssI05URVTR3EB3CCvg&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 46,
+    nombre: "Ropa Interior Térmica",
+    descripcion: "Ropa interior que se calienta con el cuerpo.",
+    precio: 35000,
+    imagen: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d493b3063b5a2cefd7af9cda5dab07d3.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
+    destacado: true,
+    categoria: "Accesorios"
+  },
+  {
+    id: 47,
+    nombre: "Gel Antibacterial",
+    descripcion: "Gel para mantener la higiene antes y después del juego.",
+    precio: 15000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcvEUErnBu8awk8YQ4R_A3mXzIPVTxvBwYg&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 48,
+    nombre: "Toallitas Húmedas",
+    descripcion: "Toallitas para una limpieza rápida y efectiva.",
+    precio: 10000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2TFZntaoxVU3FIcDOx0ZsGK37fOrrBgl0w&s",
+    destacado: false,
+    categoria: "Lubricantes"
+  },
+  {
+    id: 49,
+    nombre: "Spray Desinfectante",
+    descripcion: "Spray para desinfectar juguetes y superficies.",
+    precio: 20000,
+    imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2BT4hVGkLRCKq6H80ZmRdMPjkSfEq7TGlw&s",
+    destacado: false,
+    categoria: "Accesorios"
+  },
+  {
+    id: 50,
+    nombre: "Bolsa de Almacenamiento",
+    descripcion: "Bolsa para guardar y transportar juguetes de manera discreta.",
+    precio: 25000,
+    imagen: "https://media.falabella.com/falabellaCO/130319460_01/w=800,h=800,fit=pad",
+    destacado: false,
+    categoria: "Accesorios"
   }
 ];

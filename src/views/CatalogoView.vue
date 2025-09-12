@@ -2,18 +2,26 @@
   <div class="catalogo p-6 space-y-16">
     <h2 class="text-3xl font-bold mb-12 text-center">Catálogo de Productos</h2>
 
+    <div class="buscador">
+      <label for="categoria" class="mr-2 font-semibold">Filtrar por categoría:</label>
+      <select id="categoria" v-model="categoriaSeleccionada" class="select-categoria">
+        <option value="">Todas</option>
+        <option v-for="cat in categorias" :key="cat" :value="cat">{{ cat }}</option>
+      </select>
+    </div>
+
     <section
-      v-for="cat in categorias"
+      v-for="cat in categoriasFiltradas"
       :key="cat"
       class="categoria-section"
     >
-      <h3 class="text-2xl font-semibold mb-8 text-pink-500 border-b border-pink-500 pb-2">
+      <h3 style="margin-left: 45%; font-size: 2.5rem;">
         {{ cat }}
       </h3>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div>
         <div
-          v-for="producto in productos.filter(p => p.categoria === cat)"
+          v-for="producto in productosFiltrados(cat)"
           :key="producto.id"
           class="card"
           @click="verDetalles(producto.id)"
@@ -35,8 +43,58 @@
   </div>
 </template>
 
+<script>
+import { productos, categorias } from "@/data/productos.js";
+
+export default {
+  name: "CatalogoView",
+  data() {
+    return {
+      productos,
+      categorias,
+      categoriaSeleccionada: ""
+    };
+  },
+  computed: {
+    categoriasFiltradas() {
+      if (!this.categoriaSeleccionada) return this.categorias;
+      return [this.categoriaSeleccionada];
+    }
+  },
+  methods: {
+    productosFiltrados(cat) {
+      return this.productos.filter(p => p.categoria === cat);
+    },
+    verDetalles(id) {
+      this.$router.push({ name: "producto-detalle", params: { id } });
+    }
+  }
+};
+</script>
+
 <style scoped>
+.buscador {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+.buscador label {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.select-categoria {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+}
+
 .card {
+  margin-bottom: 30px;
   background: #fff;
   color: #333;
   border-radius: 12px;
