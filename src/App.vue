@@ -1,26 +1,37 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import MainNavbar from "@/components/MainNavbar.vue";
 </script>
 
+<template>
+  <div class="app">
+    <MainNavbar />
+    <main>
+      <router-view />
+    </main>
+    <footer>
+      <p>© 2025 SexShop CBN | Todos los derechos reservados</p>
+    </footer>
+  </div>
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #111;
+  color: #f5f5f5;
+}
+
+main {
+  padding: 20px;
+  min-height: 80vh;
+}
+
+footer {
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 15px;
+  background: #222;
+  color: #aaa;
+  font-size: 14px;
 }
 </style>
