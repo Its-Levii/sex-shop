@@ -1,22 +1,3 @@
-<script>
-import { productos, categorias } from "@/data/productos.js";
-
-export default {
-  name: "CatalogoView",
-  data() {
-    return {
-      productos,
-      categorias
-    };
-  },
-  methods: {
-    verDetalles(id) {
-      this.$router.push({ name: "producto-detalle", params: { id } });
-    }
-  }
-};
-</script>
-
 <template>
   <div class="catalogo p-6 space-y-16">
     <h2 class="text-3xl font-bold mb-12 text-center">Catálogo de Productos</h2>
