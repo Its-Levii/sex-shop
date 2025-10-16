@@ -53,7 +53,7 @@
       <input type="text" placeholder="Tu nombre: " required />
       <input type="email" placeholder="Tu correo: " required />
       <textarea placeholder="Tu mensaje: " required></textarea>
-      <button type="submit">Enviar</button>
+      <ButtonPrime type="submit" label="Enviar" class="p-button-pink" />
     </form>
   </div>
 </template>
@@ -86,20 +86,20 @@ textarea {
   resize: none;
 }
 
-button {
-  background: hotpink;
-  border: none;
+::v-deep(.p-button.p-button-pink) {
+  background-color: hotpink !important;
+  border: none !important;
+  color: white !important;
+  font-weight: bold;
+  transition: 0.3s;
   padding: 12px;
   border-radius: 8px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-button:hover {
-  background: deeppink;
+::v-deep(.p-button.p-button-pink:hover) {
+  background-color: deeppink !important;
 }
+
 
 .info-extra {
   margin-bottom: 30px;

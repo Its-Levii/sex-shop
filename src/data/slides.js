@@ -1,6 +1,6 @@
 export const slides = [
   {
-    imagen: "https://aditivo.mx/cdn/shop/products/9d4f1248-5409-4117-b4e5-e8fbdc205db41-8e74e6bff4f2c7917b16145334446982-640-0.png?v=1680112145",
+    imagen: "https://ilitia.com.co/wp-content/uploads/2019/02/BANNER-PAGINA-1400x656.png",
     titulo: "Envío Gratis",
     descripcion: "Envío gratis en compras mayores a $100.000 COP."
   },

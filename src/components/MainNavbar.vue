@@ -91,8 +91,7 @@ export default {
   border-radius: 2px;
   transition: 0.3s;
 }
-
-/* Responsive */
+  
 @media (max-width: 700px) {
   .nav-links {
     position: absolute;

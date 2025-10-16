@@ -15,7 +15,13 @@ export const productos = [
     precio: 25000,
     imagen: "https://serez.co/cdn/shop/products/5b3fc6_06a6b3db985f4dfba8ac8b58b8fa4caa_mv2.jpg?v=1659539333",
     destacado: true,
-    categoria: "Lubricantes"
+    categoria: "Lubricantes",
+    rating: 4.1,
+    opiniones: 218,
+    stock: 14,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 25
   },
   {
     id: 2,
@@ -24,7 +30,13 @@ export const productos = [
     precio: 80000,
     imagen: "https://image.made-in-china.com/202f0j00AMsqCdJmdGoD/Women-Sexy-Backless-Two-Piece-Lingerie-Plus-Size-Ladies-Flower-Embroidery-Lace-Transparent-Sexy-Lingeries.webp",
     destacado: true,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.5,
+    opiniones: 141,
+    stock: 55,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 10,
   },
   {
     id: 3,
@@ -33,7 +45,13 @@ export const productos = [
     precio: 120000,
     imagen: "https://m.media-amazon.com/images/I/51R8UaBDygL._UF1000,1000_QL80_.jpg",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.8,
+    opiniones: 380,
+    stock: 46,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 4,
@@ -42,7 +60,13 @@ export const productos = [
     precio: 30000,
     imagen: "https://olimpica.vtexassets.com/arquivos/ids/1212851/image-d99941e7b5464b5c9711617b119b3e28.jpg?v=638345503231370000",
     destacado: false,
-    categoria: "Aceites"
+    categoria: "Aceites",
+    rating: 4.8,
+    opiniones: 317,
+    stock: 19,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 20
   },
   {
     id: 5,
@@ -51,7 +75,13 @@ export const productos = [
     precio: 45000,
     imagen: "https://img.freepik.com/fotos-premium/esposas-juegos-sexuales-sobre-fondo-rosa-juguete-sexual-bdsm-concepto-erotico_955139-5801.jpg",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.6,
+    opiniones: 294,
+    stock: 11,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 6,
@@ -60,7 +90,13 @@ export const productos = [
     precio: 95000,
     imagen: "https://media.falabella.com/falabellaPE/140230010_011/w=1500,h=1500,fit=pad",
     destacado: false,
-    categoria: "Disfraces"
+    categoria: "Disfraces",
+    rating: 4.7,
+    opiniones: 65,
+    stock: 26,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 5
   },
   {
     id: 7,
@@ -69,7 +105,13 @@ export const productos = [
     precio: 50000,
     imagen: "https://exitocol.vtexassets.com/arquivos/ids/23569723/anillo-vibrador-para-pene-retardante-y-estimulante-punto-g.jpg?v=638562516131900000",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.5,
+    opiniones: 427,
+    stock: 32,
+    envioGratis: false,
+    nuevo: true,
+    descuento: 5
   },
   {
     id: 8,
@@ -78,7 +120,13 @@ export const productos = [
     precio: 85000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhU_plPKleFE9CdRnFk3rui2veTNcbRhDapw&s",
     destacado: true,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.9,
+    opiniones: 155,
+    stock: 12,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 15
   },
   {
     id: 9,
@@ -87,7 +135,13 @@ export const productos = [
     precio: 78000,
     imagen: "https://soykuwai.com/wp-content/uploads/2024/04/conjunto-de-lenceria-rojo-en-Medellin.webp",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.5,
+    opiniones: 336,
+    stock: 25,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 10,
@@ -96,7 +150,13 @@ export const productos = [
     precio: 69000,
     imagen: "https://ropamujerbonita.com/wp-content/uploads/2023/12/67-300x450.jpg",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.3,
+    opiniones: 422,
+    stock: 18,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 20
   },
   {
     id: 11,
@@ -105,7 +165,13 @@ export const productos = [
     precio: 25000,
     imagen: "https://www.sevenseven.com/dw/image/v2/BHFM_PRD/on/demandware.static/-/Sites-storefront_catalog_sevenseven/default/dwdc608f3d/images/hi-res/Ropa_Int/Pantys-Para-Mujer-28800077-777_1.jpg?sw=800&sh=960",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.3,
+    opiniones: 217,
+    stock: 30,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 12,
@@ -114,7 +180,13 @@ export const productos = [
     precio: 82000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrbpJ_4nWunaWCzJ5PgTUWUuW7thpQZt_FQ&s",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.3,
+    opiniones: 309,
+    stock: 5,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 25
   },
   {
     id: 13,
@@ -123,7 +195,13 @@ export const productos = [
     precio: 99000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Oh4AXEAV-LhYfGhVxp2gHN4X2Kb1tyPlpQ&s",
     destacado: true,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.9,
+    opiniones: 446,
+    stock: 45,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 15
   },
   {
     id: 14,
@@ -132,7 +210,13 @@ export const productos = [
     precio: 76000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kzaPu68iYL4R1rhL2_2Utu9ET5Y6O5oWfg&s",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.2,
+    opiniones: 307,
+    stock: 35,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 5
   },
   {
     id: 15,
@@ -141,7 +225,13 @@ export const productos = [
     precio: 74000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBP566ogpHd_3C7I9UipyZJX0hk8FjQpqjpA&s",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 5.0,
+    opiniones: 279,
+    stock: 22,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 16,
@@ -150,7 +240,13 @@ export const productos = [
     precio: 78000,
     imagen: "https://img.kwcdn.com/product/fancy/071730d1-b2f4-4c21-a660-e4475015c619.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.2,
+    opiniones: 332,
+    stock: 48,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 30
   },
   {
     id: 17,
@@ -159,7 +255,13 @@ export const productos = [
     precio: 79000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvTP7IZrkgK5FS1jk-mUQ9tTC-MF5HthcOWw&s",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.3,
+    opiniones: 186,
+    stock: 44,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 15
   },
   {
     id: 18,
@@ -168,7 +270,13 @@ export const productos = [
     precio: 72000,
     imagen: "https://self-care-shop-5.myshopify.com/cdn/shop/files/61BD3B74-EE17-4730-9B5C-A05BAEC54F03.png?v=1715672277",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.6,
+    opiniones: 102,
+    stock: 9,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 19,
@@ -177,7 +285,13 @@ export const productos = [
     precio: 73000,
     imagen: "https://i.etsystatic.com/14409013/r/il/d5bac9/3069908889/il_570xN.3069908889_pt9v.jpg",
     destacado: false,
-    categoria: "Lencería"
+    categoria: "Lencería",
+    rating: 4.6,
+    opiniones: 261,
+    stock: 25,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 5
   },
   {
     id: 20,
@@ -186,7 +300,13 @@ export const productos = [
     precio: 150000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_610448-MCO77265922053_062024-O.webp",
     destacado: true,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.3,
+    opiniones: 180,
+    stock: 31,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 15
   },
   {
     id: 21,
@@ -195,7 +315,13 @@ export const productos = [
     precio: 18000,
     imagen: "https://m.media-amazon.com/images/I/6116TbIiwML._UF1000,1000_QL80_.jpg",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.4,
+    opiniones: 210,
+    stock: 40,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 22,
@@ -204,7 +330,13 @@ export const productos = [
     precio: 12000,
     imagen: "https://m.media-amazon.com/images/I/5102Vjgsr3L._UF1000,1000_QL80_.jpg",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 23,
@@ -213,7 +345,13 @@ export const productos = [
     precio: 15000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1uhU8dz071kicDE-TJ4EowO3eWV9NqVos9A&s",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.2,
+    opiniones: 150,
+    stock: 35,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 5
   },
   {
     id: 24,
@@ -222,7 +360,13 @@ export const productos = [
     precio: 22000,
     imagen: "https://m.media-amazon.com/images/I/71ZXYVsYlFL.jpg",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.5,
+    opiniones: 134,
+    stock: 20,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 10
   },
   {
     id: 25,
@@ -231,7 +375,13 @@ export const productos = [
     precio: 35000,
     imagen: "https://miracle-store.co/cdn/shop/files/BolasChinas4.jpg?v=1715223746&width=1946",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.1,
+    opiniones: 176,
+    stock: 27,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 26,
@@ -240,7 +390,13 @@ export const productos = [
     precio: 40000,
     imagen: "https://media.falabella.com/falabellaCO/129204691_01/w=800,h=800,fit=pad",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 27,
@@ -249,7 +405,13 @@ export const productos = [
     precio: 135000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRal-9GFRqWi0bsVdhWjCbXrXgYSLNCRsvLJQ&s",
     destacado: true,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.4,
+    opiniones: 210,
+    stock: 40,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 28,
@@ -258,7 +420,13 @@ export const productos = [
     precio: 25000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCuN9SoIXkeBs5MyaOsDjtUpsjg89ky7uYXg&s",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 29,
@@ -267,7 +435,13 @@ export const productos = [
     precio: 38000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_856523-MLU71708213252_092023-O.webp",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 30,
@@ -276,7 +450,13 @@ export const productos = [
     precio: 60000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw-_sfWCtWOsBwK-eWfxPfzmu459yrVYvGJA&s",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 20
   },
   {
     id: 31,
@@ -285,7 +465,13 @@ export const productos = [
     precio: 99000,
     imagen: "https://media.falabella.com/falabellaCO/130077662_01/w=800,h=800,fit=pad",
     destacado: true,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 32,
@@ -294,7 +480,13 @@ export const productos = [
     precio: 48000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_956086-MCO71832915245_092023-O.webp",
     destacado: false,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 30
   },
   {
     id: 33,
@@ -303,7 +495,13 @@ export const productos = [
     precio: 70000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_714263-MLA84179042840_052025-O.webp",
     destacado: true,
-    categoria: "Juguetes"
+    categoria: "Juguetes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 34,
@@ -312,7 +510,13 @@ export const productos = [
     precio: 95000,
     imagen: "https://media.falabella.com/sodimacCO/713432/thumbnail",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 35,
@@ -321,7 +525,13 @@ export const productos = [
     precio: 30000,
     imagen: "https://i.pinimg.com/736x/ea/d6/fd/ead6fd2db19b1c7700a9e55fdeddb4fe.jpg",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 25
   },
   {
     id: 36,
@@ -330,7 +540,13 @@ export const productos = [
     precio: 20000,
     imagen: "https://cdn1.totalcommerce.cloud/homesentry/product-zoom/es/bolsa-termica-1.webp",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 37,
@@ -339,7 +555,13 @@ export const productos = [
     precio: 15000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_912098-CBT90399898580_082025-O.webp",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 38,
@@ -348,7 +570,13 @@ export const productos = [
     precio: 10000,
     imagen: "https://http2.mlstatic.com/D_NQ_NP_852384-MLU74389615837_022024-O.webp",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 39,
@@ -357,7 +585,13 @@ export const productos = [
     precio: 25000,
     imagen: "https://contents.mediadecathlon.com/p1897410/k$f9b132efc14b8fcc9cf2aa80375eba86/guantes-interiores-100-seda-de-trekking-en-montana-trek-500-negro-adulto.jpg?format=auto&quality=40&f=800x800",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: true,
+    descuento: 5
   },
   {
     id: 40,
@@ -366,7 +600,13 @@ export const productos = [
     precio: 15000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ON5SU_nfxSkvXFS7XbO5bN36yz4O16cILg&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 20
   },
   {
     id: 41,
@@ -375,7 +615,14 @@ export const productos = [
     precio: 12000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfvY7pDRo4TXpqDfqZhmUA_BIh5D2VE5ORg&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
+
   },
   {
     id: 42,
@@ -384,7 +631,13 @@ export const productos = [
     precio: 18000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTFIRSIqt_aP0WOHZzczFZFsEUhoXxL82MLQ&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 43,
@@ -393,7 +646,13 @@ export const productos = [
     precio: 70000,
     imagen: "https://m.media-amazon.com/images/I/71-DU9s8VsL._UF1000,1000_QL80_.jpg",
     destacado: true,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 20
   },
   {
     id: 44,
@@ -402,7 +661,13 @@ export const productos = [
     precio: 12000,
     imagen: "https://i.etsystatic.com/9715208/r/il/dd94ea/3843118299/il_570xN.3843118299_7f0p.jpg",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 10
   },
   {
     id: 45,
@@ -411,7 +676,13 @@ export const productos = [
     precio: 25000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2zTgDMprL0fYKs6PVssI05URVTR3EB3CCvg&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: true,
+    descuento: 0
   },
   {
     id: 46,
@@ -420,7 +691,13 @@ export const productos = [
     precio: 35000,
     imagen: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/d493b3063b5a2cefd7af9cda5dab07d3.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp",
     destacado: true,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: true,
+    descuento: 0
   },
   {
     id: 47,
@@ -429,7 +706,13 @@ export const productos = [
     precio: 15000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcvEUErnBu8awk8YQ4R_A3mXzIPVTxvBwYg&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 0
   },
   {
     id: 48,
@@ -438,7 +721,13 @@ export const productos = [
     precio: 10000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP2TFZntaoxVU3FIcDOx0ZsGK37fOrrBgl0w&s",
     destacado: false,
-    categoria: "Lubricantes"
+    categoria: "Lubricantes",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: true,
+    descuento: 0
   },
   {
     id: 49,
@@ -447,7 +736,13 @@ export const productos = [
     precio: 20000,
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2BT4hVGkLRCKq6H80ZmRdMPjkSfEq7TGlw&s",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: false,
+    nuevo: false,
+    descuento: 0
   },
   {
     id: 50,
@@ -456,6 +751,12 @@ export const productos = [
     precio: 25000,
     imagen: "https://media.falabella.com/falabellaCO/130319460_01/w=800,h=800,fit=pad",
     destacado: false,
-    categoria: "Accesorios"
+    categoria: "Accesorios",
+    rating: 4.0,
+    opiniones: 98,
+    stock: 28,
+    envioGratis: true,
+    nuevo: false,
+    descuento: 0
   }
 ];
