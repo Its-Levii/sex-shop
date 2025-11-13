@@ -5,16 +5,37 @@ export default {
   name: "ProductoDetalleView",
   data() {
     return {
-      producto: null
+      producto: null,
     };
   },
   created() {
     const id = parseInt(this.$route.params.id);
-    this.producto = productos.find(p => p.id === id) || null;
-  }
+    this.producto = productos.find((p) => p.id === id) || null;
+  },
+  methods: {
+    agregarAlCarrito() {
+      const user = JSON.parse(localStorage.getItem("user"));
+      if (!user) {
+        alert("Debes iniciar sesión para agregar productos al carrito.");
+        this.$router.push("/login");
+        return;
+      }
+
+      const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      const existe = carrito.find((item) => item.id === this.producto.id);
+      if (existe) {
+        existe.cantidad += 1;
+      } else {
+        carrito.push({ ...this.producto, cantidad: 1 });
+      }
+
+      localStorage.setItem("carrito", JSON.stringify(carrito));
+      alert(`"${this.producto.nombre}" se agregó al carrito 🛒`);
+      window.dispatchEvent(new Event("update-cart"));
+    },
+  },
 };
 </script>
-
 
 <template>
   <div v-if="producto" class="detalle">
@@ -45,7 +66,11 @@ export default {
 
       <p class="descripcion">{{ producto.descripcion }}</p>
 
-      <ButtonPrime label="Agregar al carrito" class="p-button-pink" />
+      <ButtonPrime
+        label="Agregar al carrito"
+        class="p-button-pink"
+        @click="agregarAlCarrito"
+      />
     </div>
   </div>
 
@@ -151,4 +176,3 @@ h2 {
   text-align: center;
 }
 </style>
-

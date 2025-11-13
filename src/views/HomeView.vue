@@ -56,9 +56,9 @@
             <h3>{{ producto.nombre }}</h3>
             <p class="precio">
               <span class="precio-antiguo">{{ producto.precio.toLocaleString() }} COP</span>
-              <span class="precio-descuento">{{
-                (producto.precio * (1 - producto.descuento / 100)).toLocaleString()
-              }} COP</span>
+              <span class="precio-descuento">
+                {{ (producto.precio * (1 - producto.descuento / 100)).toLocaleString() }} COP
+              </span>
             </p>
           </div>
         </div>
@@ -76,126 +76,137 @@ export default {
   data() {
     return {
       productos,
-      slides,
+      slides
     };
   },
   computed: {
     productosDestacados() {
-      return this.productos.filter((p) => p.destacado);
+      return this.productos.filter(p => p.destacado);
     },
     productosConDescuento() {
       return this.productos
-        .filter((p) => p.descuento >= 20)
+        .filter(p => p.descuento >= 20)
         .sort((a, b) => b.descuento - a.descuento);
-    },
+    }
   },
   methods: {
     verDetalles(id) {
       this.$router.push({ name: "producto-detalle", params: { id } });
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style scoped>
 .home-container {
-  background-color: #fafafa;
-  color: #222;
+  background: #fdfdfd;
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
 }
 
 .carousel-publicidad {
-  max-width: 100%;
-  margin: 20px auto 50px;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 30px auto 60px;
+  border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
 }
 
 .banner-slide {
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 360px;
 }
 
 .banner-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.9);
+  transition: filter 0.5s ease;
+}
+
+.banner-slide:hover img {
+  filter: brightness(1);
 }
 
 .banner-texto {
   position: absolute;
-  bottom: 20px;
-  left: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 12px 20px;
+  bottom: 40px;
+  left: 50px;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px 28px;
+  border-radius: 10px;
   color: #fff;
-  border-radius: 8px;
-  max-width: 80%;
+  backdrop-filter: blur(3px);
+  max-width: 70%;
 }
 
 .banner-texto h3 {
-  margin: 0 0 6px;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.banner-texto p {
+  font-size: 1rem;
+  opacity: 0.9;
 }
 
 .seccion {
-  padding: 40px 20px;
+  padding: 60px 30px;
 }
 
 .seccion.descuentos {
-  background-color: #fff0f5;
+  background: #fff3f8;
 }
 
 .titulo {
   text-align: center;
-  font-size: 28px;
+  font-size: 2rem;
   font-weight: 700;
-  margin: 50px 0 30px;
-  color: #222;
-  letter-spacing: 1px;
+  margin-bottom: 45px;
+  color: #111;
   position: relative;
 }
 
 .titulo::after {
   content: "";
-  display: block;
-  width: 80px;
+  width: 90px;
   height: 4px;
   background: linear-gradient(90deg, #ff4081, #ff80ab);
-  margin: 10px auto 0;
+  display: block;
+  margin: 12px auto 0;
   border-radius: 2px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  padding: 20px 40px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 40px;
 }
 
 .card {
-  position: relative;
-  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
-  color: #222;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
+  background: #fff;
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
-  border: 1px solid #eee;
 }
 
 .card:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 26px rgba(255, 64, 129, 0.25);
 }
 
 .imagen-container {
   position: relative;
-  height: 240px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -203,83 +214,77 @@ export default {
 }
 
 .imagen-container img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   object-fit: contain;
   transition: transform 0.4s ease;
 }
 
 .card:hover .imagen-container img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .descuento-badge {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 14px;
+  left: 14px;
   background: linear-gradient(135deg, #ff4081, #ff80ab);
   color: #fff;
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 0.85rem;
-  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
   box-shadow: 0 3px 6px rgba(255, 64, 129, 0.3);
 }
 
 .info {
-  padding: 16px 14px 20px;
   text-align: center;
+  padding: 18px 14px 24px;
 }
 
 .info h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 8px;
   color: #222;
-  transition: color 0.3s;
+  margin-bottom: 6px;
 }
 
-
 .precio {
-  color: #ff4081;
+  color: #e91e63;
   font-size: 1.1rem;
-  font-weight: bold;
-  margin-top: 4px;
+  font-weight: 700;
 }
 
 .precio-antiguo {
-  display: inline-block;
   text-decoration: line-through;
   color: #999;
-  margin-right: 6px;
-  font-size: 0.9rem;
+  margin-right: 8px;
+  font-size: 0.95rem;
 }
-
 
 .precio-descuento {
-  color: #d81b60;
-  font-weight: bold;
+  color: #c2185b;
+  font-weight: 700;
 }
 
-.ver-mas {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.btn-ver-mas {
-  background: #e91e63;
-  color: #fff;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-  font-weight: bold;
-}
-
-.btn-ver-mas:hover {
-  background: #c2185b;
+@media (max-width: 768px) {
+  .banner-slide {
+    height: 260px;
+  }
+  .banner-texto {
+    bottom: 20px;
+    left: 20px;
+    padding: 14px 18px;
+    max-width: 90%;
+  }
+  .banner-texto h3 {
+    font-size: 1.4rem;
+  }
+  .banner-texto p {
+    font-size: 0.9rem;
+  }
+  .grid {
+    padding: 0 15px;
+  }
 }
 </style>
-

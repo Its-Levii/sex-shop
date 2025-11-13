@@ -1,29 +1,75 @@
 <template>
   <nav class="navbar">
-    <div class="logo">SexShop CBN</div>
-    <button class="hamburger" @click="menuAbierto = !menuAbierto" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul :class="['nav-links', { abierto: menuAbierto }]">
-      <li><router-link to="/">Inicio</router-link></li>
-      <li><router-link to="/catalogo">Productos</router-link></li>
-      <li><router-link to="/contacto">Contacto</router-link></li>
-    </ul>
-  </nav>
+  <div class="logo">SexShop CBN</div>
+
+  <button class="hamburger" @click="menuAbierto = !menuAbierto" aria-label="Abrir menú">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul :class="['nav-links', { abierto: menuAbierto }]">
+    <li><router-link to="/">Inicio</router-link></li>
+    <li><router-link to="/catalogo">Productos</router-link></li>
+    <li><router-link to="/contacto">Contacto</router-link></li>
+
+    <li v-if="usuario">
+      <router-link to="/carrito">Mi Carrito ({{ carritoCount }})</router-link>
+    </li>
+
+    <div class="nav-usuario">
+      <span v-if="usuario">Hola, {{ usuario.userName }}</span>
+      <router-link v-else to="/login">Iniciar sesión</router-link>
+      <button v-if="usuario" @click="cerrarSesion">Cerrar sesión</button>
+    </div>
+  </ul>
+</nav>
+
 </template>
 
 <script>
 export default {
-  name: "MainNavbar",
   data() {
     return {
-      menuAbierto: false
+      usuario: null,
+      carritoCount: 0,
+      menuAbierto: false,
     };
-  }
+  },
+  created() {
+    this.usuario = JSON.parse(localStorage.getItem("user"));
+
+    window.addEventListener("user-login", this.actualizarUsuario);
+    window.addEventListener("user-logout", this.actualizarUsuario);
+    window.addEventListener("update-cart", this.actualizarCarrito);
+
+    this.actualizarCarrito();
+  },
+  beforeUnmount() {
+    window.removeEventListener("user-login", this.actualizarUsuario);
+    window.removeEventListener("user-logout", this.actualizarUsuario);
+    window.removeEventListener("update-cart", this.actualizarCarrito);
+  },
+  methods: {
+    actualizarUsuario() {
+      this.usuario = JSON.parse(localStorage.getItem("user"));
+      this.actualizarCarrito();
+    },
+    actualizarCarrito() {
+      const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+      this.carritoCount = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+    },
+    cerrarSesion() {
+      localStorage.removeItem("user");
+      localStorage.removeItem("carrito");
+      this.actualizarUsuario();
+      window.dispatchEvent(new Event("user-logout"));
+    },
+  },
 };
+
 </script>
+
 
 <style scoped>
 .navbar {
@@ -91,7 +137,64 @@ export default {
   border-radius: 2px;
   transition: 0.3s;
 }
-  
+
+.user-name {
+  color: hotpink;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user-name:hover {
+  color: #fff;
+}
+
+.nav-usuario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+}
+
+.nav-usuario span {
+  color: hotpink;
+  cursor: default;
+}
+
+.nav-usuario span:hover {
+  color: #fff;
+}
+
+.nav-usuario a {
+  color: hotpink;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 2px solid hotpink;
+  border-radius: 6px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-usuario a:hover {
+  background: hotpink;
+  color: #fff;
+}
+
+.nav-usuario button {
+  background: hotpink;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-usuario button:hover {
+  background: deeppink;
+}
+
+
 @media (max-width: 700px) {
   .nav-links {
     position: absolute;

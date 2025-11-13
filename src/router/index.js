@@ -3,6 +3,9 @@ import HomeView from "@/views/HomeView.vue";
 import CatalogoView from "@/views/CatalogoView.vue";
 import ProductoDetalleView from "@/views/ProductoDetalleView.vue";
 import ContactoView from "@/views/ContactoView.vue";
+import LoginView from "@/views/LoginView.vue";
+import RegisterView from "@/views/RegisterView.vue";
+
 const routes = [
   {
     path: "/",
@@ -24,7 +27,22 @@ const routes = [
     path: "/contacto",
     name: "contacto",
     component: ContactoView,
-  }
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: RegisterView,
+  },
+  {
+    path: "/carrito",
+    name: "carrito",
+    component: () => import("@/views/CarritoView.vue"),
+  },
 ];
 
 const router = createRouter({
@@ -33,7 +51,3 @@ const router = createRouter({
 });
 
 export default router;
-
-
-
-
