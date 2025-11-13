@@ -48,7 +48,7 @@ export default {
       const savedUser = JSON.parse(localStorage.getItem("user"));
 
       if (!savedUser) {
-        alert("No hay usuarios registrados. Por favor, regístrate primero.");
+        alert("Usuario o contraseña incorrectos.");
         return;
       }
 
