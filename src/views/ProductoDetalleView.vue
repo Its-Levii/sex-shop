@@ -30,7 +30,7 @@ export default {
       }
 
       localStorage.setItem("carrito", JSON.stringify(carrito));
-      alert(`"${this.producto.nombre}" se agregó al carrito 🛒`);
+      alert(`"${this.producto.nombre}" se agregó al carrito`);
       window.dispatchEvent(new Event("update-cart"));
     },
   },
