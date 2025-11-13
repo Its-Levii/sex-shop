@@ -17,6 +17,13 @@
         </div>
       </div>
       <h3 class="total">Total: {{ total.toLocaleString() }} COP</h3>
+      <div class="carrito-acciones">
+
+        <ButtonPrime label="Comprar" class="btn-whatsapp" @click="irCheckout" />
+        
+      
+      </div>
+
     </div>
 
     <div v-else class="vacio">
@@ -49,10 +56,32 @@ export default {
     cargarCarrito() {
       this.carrito = JSON.parse(localStorage.getItem("carrito")) || [];
     },
+    irCheckout() {
+      this.$router.push("/checkout");
+    },
     eliminarItem(id) {
       this.carrito = this.carrito.filter((i) => i.id !== id);
       localStorage.setItem("carrito", JSON.stringify(this.carrito));
       window.dispatchEvent(new Event("update-cart"));
+    },
+    enviarWhatsapp() {
+      let mensaje = "*Hola, estoy interesado en los siguientes productos:*%0A%0A";
+      
+      this.carrito.forEach((item) => {
+        mensaje += ` *${item.nombre}*%0A`;
+        mensaje += `   Cantidad: ${item.cantidad}%0A`;
+        mensaje += `   Precio unitario: ${item.precio.toLocaleString()} COP%0A`;
+        mensaje += `   Descuento: ${item.descuento}%%0A`;
+        mensaje += `   Subtotal: ${(item.cantidad * item.precio * (1 - item.descuento / 100)).toLocaleString()} COP%0A%0A`;
+      });
+      
+      mensaje += `*TOTAL: ${this.total.toLocaleString()} COP*`;
+      
+     
+      const numeroWhatsapp = "573135562237"; 
+      const urlWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${mensaje}`;
+      
+      window.open(urlWhatsapp, "_blank");
     },
   },
   computed: {
@@ -68,6 +97,27 @@ export default {
 </script>
 
 <style scoped>
+.btn-whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e) !important;
+  border: none !important;
+  color: white !important;
+  padding: 0.8rem 1.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 12px rgba(18, 140, 126, 0.4) !important;
+  transition: transform 0.2s, box-shadow 0.3s !important;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(18, 140, 126, 0.5) !important;
+}
+
+.btn-whatsapp:active {
+  transform: scale(0.98);
+}
+
 .carrito {
   max-width: 800px;
   margin: 50px auto;
@@ -110,5 +160,24 @@ h2 {
 .vacio {
   text-align: center;
   color: #bbb;
+}
+
+.carrito-acciones {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+:deep(.p-button-success) {
+  background-color: #25d366 !important;
+  border-color: #25d366 !important;
+  margin-top: 20px;
+  width: 100%;
+}
+
+:deep(.p-button-success:hover) {
+  background-color: #20ba5c !important;
+  border-color: #20ba5c !important;
 }
 </style>

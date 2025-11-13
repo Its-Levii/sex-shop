@@ -13,6 +13,10 @@
     <li><router-link to="/catalogo">Productos</router-link></li>
     <li><router-link to="/contacto">Contacto</router-link></li>
 
+      <li v-if="usuario">
+        <router-link to="/orders">Pedidos</router-link>
+      </li>
+
     <li v-if="usuario">
       <router-link to="/carrito">Mi Carrito ({{ carritoCount }})</router-link>
     </li>
@@ -21,6 +25,7 @@
       <span v-if="usuario">Hola, {{ usuario.userName }}</span>
       <router-link v-else to="/login">Iniciar sesión</router-link>
       <button v-if="usuario" @click="cerrarSesion">Cerrar sesión</button>
+      <router-link v-if="isAdmin" to="/admin" class="admin-link">Admin</router-link>
     </div>
   </ul>
 </nav>
@@ -35,6 +40,13 @@ export default {
       carritoCount: 0,
       menuAbierto: false,
     };
+  },
+  computed: {
+    isAdmin() {
+      return (
+        this.usuario && (this.usuario.role === "admin" || this.usuario.userName === "admin")
+      );
+    },
   },
   created() {
     this.usuario = JSON.parse(localStorage.getItem("user"));

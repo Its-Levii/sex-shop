@@ -36,6 +36,15 @@ export default {
   },
   methods: {
     handleLogin() {
+      
+      if (this.email === "admin@123.com" && this.password === "123") {
+        const adminUser = { userName: "admin", email: "admin", role: "admin" };
+        localStorage.setItem("user", JSON.stringify(adminUser));
+        window.dispatchEvent(new Event("user-login"));
+        this.$router.push("/admin");
+        return;
+      }
+
       const savedUser = JSON.parse(localStorage.getItem("user"));
 
       if (!savedUser) {
@@ -47,9 +56,16 @@ export default {
         savedUser.email === this.email &&
         savedUser.password === this.password
       ) {
-        localStorage.setItem("user", JSON.stringify(savedUser));
+        
+        const toStore = { ...savedUser };
+        localStorage.setItem("user", JSON.stringify(toStore));
         window.dispatchEvent(new Event("user-login"));
-        this.$router.push("/");
+        
+        if (toStore.role === "admin" || toStore.userName === "admin") {
+          this.$router.push("/admin");
+        } else {
+          this.$router.push("/");
+        }
       } else {
         alert("Correo o contraseña incorrectos.");
       }
